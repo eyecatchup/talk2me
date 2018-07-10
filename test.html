@@ -1,7 +1,21 @@
-<ul class="items">
-    <li><a href="#" data-str="rot" data-hl="de">rot</a></li>
-    <li><a href="#" data-str="gelb" data-hl="de">gelb</a></li>
-    <li><a href="#" data-str="and now in english" data-hl="en">and now in english</a></li>
+<h3>Zahlen</h3>
+<ul class="wordlist">
+    <li><a href="#" data-str="eins" data-hl="de">1</a></li>
+    <li><a href="#" data-str="zwei" data-hl="de">2</a></li>
+    <li><a href="#" data-str="drei" data-hl="de">3</a></li>
+    <li><a href="#" data-str="vier" data-hl="de">4</a></li>
+    <li><a href="#" data-str="fünf" data-hl="de">5</a></li>
+    <li><a href="#" data-str="zehn" data-hl="de">10</a></li>
+</ul>
+
+<h3>Farben</h3>
+<ul class="wordlist">
+    <li><a href="#" data-str="rot" data-hl="de">Rot</a></li>
+    <li><a href="#" data-str="gelb" data-hl="de">Gelb</a></li>
+    <li><a href="#" data-str="grün" data-hl="de">Grün</a></li>
+    <li><a href="#" data-str="blau" data-hl="de">Blau</a></li>
+    <li><a href="#" data-str="schwarz" data-hl="de">Schwarz</a></li>
+    <li><a href="#" data-str="weiss" data-hl="de">Weiss</a></li>
 </ul>
 
 <script>
@@ -31,7 +45,7 @@
         }
     }).play(string, lang)};
 
-    document.querySelector('ul.items').addEventListener('click', function(evt) {
+    document.querySelector('ul.wordlist').addEventListener('click', function(evt) {
         evt.preventDefault();
         Say(evt.target.dataset.str, evt.target.dataset.hl);
     });
